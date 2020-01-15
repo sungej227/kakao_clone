@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Chats | Kakao Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/e0edca07d8.js"
       crossorigin="anonymous"
@@ -24,10 +25,10 @@
       </div>
     </div>
     <header class="header">
-      <div class="header_header_column">
+      <div class="header_header-column">
         <h1 class="header_title">Chats</h1>
       </div>
-      <div class="header_header_column">
+      <div class="header_header-column">
         <span class="header_icon">
           <i class="fas fa-search"></i>
         </span>
@@ -35,7 +36,9 @@
           <i class="far fa-comment"></i>
         </span>
         <span class="header_icon">
-          <i class="fas fa-cog"></i>
+          <a href="settings.html">
+            <i class="fas fa-cog"></i>
+          </a>
         </span>
       </div>
     </header>
@@ -43,17 +46,23 @@
       <ul class="chats_list">
         <li class="chats_chat chat">
           <a href="chat.html">
-            <div class="chat_column">
-              <img class="chat_avatar g-avatar" src="images/giwan.jpg" />
-              <div class="chat_content">
-                <span class="chat_username">
-                  오빠
-                </span>
-                <span class="chat_preview">롤ㄱㄱ</span>
+            <div class="chats_chat friend friend--lg">
+              <div class="friend_column">
+                <img class="m-avatar friend_avatar" src="images/giwan.jpg" />
+                <div class="friend_content">
+                  <span class="friend_name">
+                    오빠
+                  </span>
+                  <span class="friend_bottom-text">
+                    지금 뭐함?
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat_column">
-              <span class="chat_timetamp">오후 1:32</span>
+              <div class="friend_column">
+                <span class="chat_timestamp">
+                  January 13
+                </span>
+              </div>
             </div>
           </a>
         </li>
@@ -68,6 +77,7 @@
         </li>
         <li class="nav_list-item">
           <a href="index.html" class="nav_list-link">
+            <div class="nav_badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
@@ -83,5 +93,10 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen_text">
+        Please make your screen small
+      </span>
+    </div>
   </body>
 </html>
