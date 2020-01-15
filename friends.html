@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Friends | Kakao Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/e0edca07d8.js"
       crossorigin="anonymous"
@@ -24,22 +25,24 @@
       </div>
     </div>
     <header class="header">
-      <div class="header_header_column">
+      <div class="header_header-column">
         <h1 class="header_title">Friends</h1>
       </div>
-      <div class="header_header_column">
+      <div class="header_header-column">
         <span class="header_icon">
           <i class="fas fa-search"></i>
         </span>
         <span class="header_icon">
-          <i class="fas fa-cog"></i>
+          <a href="settings.html">
+            <i class="fas fa-cog"></i>
+          </a>
         </span>
       </div>
     </header>
     <main class="friends">
       <header class="friends_header">
-        <div class="friends_friend friend friend--lg">
-          <div class="friend_colummn">
+        <div class="friends_friend friend">
+          <div class="friend_column">
             <img class="g-avatar friend_avatar" src="images/me.jpg" />
             <div class="friend_content">
               <span class="friend_name">
@@ -53,38 +56,115 @@
         </div>
       </header>
       <div class="friends_plus">
-        <h5 class="friends_title">플러스 친구</h5>
+        <h5 class="friends_title">Plus Friend</h5>
         <div class="friends_friend friend">
           <div class="friend_column">
-            <img class="g-avatar friend_avatar" src="images/me.jpg" />
+            <img class="friend_avatar" src="images/melon.jpg" />
             <div class="friend_content">
               <span class="friend_name">
-                Plus Friends
+                멜론
+              </span>
+              <span class="friend_status">
+                음악이 필요한 순간
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="friends_friend friend">
+          <div class="friend_column">
+            <img class="friend_avatar" src="images/kakao.jpg" />
+            <div class="friend_content">
+              <span class="friend_name">
+                카카오게임즈
+              </span>
+              <span class="friend_status">
+                함께해요, 카카오 게임즈
               </span>
             </div>
           </div>
         </div>
       </div>
       <ul class="friends_list">
-        <h5 class="friends_title">friends 14</h5>
+        <h5 class="friends_title">Friends 14</h5>
         <li class="friends_friend friend friend--lg">
           <div class="friend_column">
-            <img class="g-avatar friend_avatar" src="images/me.jpg" />
+            <img class="friend_avatar" src="images/giwan.jpg" />
             <div class="friend_content">
               <span class="friend_name">
-                성은지
+                오빠
               </span>
               <span class="friend_status">
-                새해 복 많이 받으세요!
+                A man chooses, A slave obeys
               </span>
             </div>
           </div>
           <div class="friend_column">
             <div class="friend_now-listening">
-              <span>Mo Better Blues..</span>
-              <i class="fas fa-play"></i>
+              <span
+                >Mo Better Blues (New York..
+                <i class="fas fa-play"></i>
+              </span>
             </div>
           </div>
+        </li>
+        <li class="friends_friend friend friend--lg">
+          <div class="friend_column">
+            <img class="friend_avatar" src="images/blank.jpg" />
+            <div class="friend_content">
+              <span class="friend_name">
+                쁘흑
+              </span>
+              <span class="friend_status"> </span>
+            </div>
+          </div>
+          <div class="friend_column"></div>
+        </li>
+        <li class="friends_friend friend friend--lg">
+          <div class="friend_column">
+            <img class="friend_avatar" src="images/so.jpg" />
+            <div class="friend_content">
+              <span class="friend_name">
+                김소연
+              </span>
+              <span class="friend_status">
+                합격을 기원합니다
+              </span>
+            </div>
+          </div>
+          <div class="friend_column">
+            <div class="friend_now-listening">
+              <span
+                >모든 날 (골든 차일드)
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends_friend friend friend--lg">
+          <div class="friend_column">
+            <img class="friend_avatar" src="images/woo.jpg" />
+            <div class="friend_content">
+              <span class="friend_name">
+                우승완
+              </span>
+              <span class="friend_status">
+                지루한 일상도 하이라이트는 즐겁다
+              </span>
+            </div>
+          </div>
+          <div class="friend_column"></div>
+        </li>
+        <li class="friends_friend friend friend--lg">
+          <div class="friend_column">
+            <img class="friend_avatar" src="images/bruce.jpg" />
+            <div class="friend_content">
+              <span class="friend_name">
+                Bruce
+              </span>
+              <span class="friend_status"> </span>
+            </div>
+          </div>
+          <div class="friend_column"></div>
         </li>
       </ul>
     </main>
@@ -97,6 +177,7 @@
         </li>
         <li class="nav_list-item">
           <a href="index.html" class="nav_list-link">
+            <div class="nav_badge">8</div>
             <i class="far fa-comment"></i>
           </a>
         </li>
@@ -112,5 +193,10 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen_text">
+        Please make your screen small
+      </span>
+    </div>
   </body>
 </html>
