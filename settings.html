@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Settings | Kakao Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/e0edca07d8.js"
       crossorigin="anonymous"
@@ -24,14 +25,14 @@
       </div>
     </div>
     <header class="header">
-      <div class="header_header_column">
-        <a href="more.html">
-          <i class="fas fa-arrow-left fa-2x"></i>
+      <div class="header_header-column">
+        <a href="more.html" class="header_back-btn">
+          <i class="fas fa-arrow-left"></i>
         </a>
 
         <h1 class="header_title">Settings</h1>
       </div>
-      <div class="header_header_column">
+      <div class="header_header-column">
         <span class="header_icon">
           <i class="fas fa-search"></i>
         </span>
@@ -60,6 +61,33 @@
           </li>
         </ul>
       </section>
+      <section class="settings_sections">
+        <ul class="settings_list">
+          <li class="settings_setting">
+            <span class="settings_icon">
+              <i class="fas fa-lock"></i>
+            </span>
+            <span class="settings_title">Privacy</span>
+          </li>
+          <li class="settings_setting">
+            <span class="settings_icon">
+              <i class="far fa-bell"></i>
+            </span>
+            <span class="settings_title">Notifications</span>
+          </li>
+          <li class="settings_setting">
+            <span class="settings_icon">
+              <i class="far fa-user"></i>
+            </span>
+            <span class="settings_title">Friends</span>
+          </li>
+        </ul>
+      </section>
     </main>
+    <div class="bigScreen">
+      <span class="bigScreen_text">
+        Please make your screen small
+      </span>
+    </div>
   </body>
 </html>
