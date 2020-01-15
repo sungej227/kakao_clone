@@ -5,76 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Chat | Kakao Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/e0edca07d8.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar_column">
-        <span class="status-bar_clock">13:54</span>
-      </div>
-      <div class="status-bar_column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar_battery-level">85%</span>
-        <i class="fas fa-battery-three-quarters"></i>
-      </div>
-    </div>
-    <header class="header">
-      <div class="header_header_column">
-        <a href="index.html" class="header_back-btn">
-          <i class="fas fa-arrow-left fa-2x"></i>
-        </a>
-
-        <h1 class="header_title">오빠</h1>
-      </div>
-      <div class="header_header_column">
-        <span class="header_icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <div class="header_icon">
-          <i class="fas fa-bars"></i>
+  <body class="chats-body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar_column">
+          <span class="status-bar_clock">13:54</span>
+        </div>
+        <div class="status-bar_column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar_battery-level">85%</span>
+          <i class="fas fa-battery-three-quarters"></i>
         </div>
       </div>
-    </header>
-    <main class="chat">
+      <header class="header">
+        <div class="header_header-column">
+          <a href="index.html" class="header_back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+
+          <h1 class="header_title">오빠</h1>
+        </div>
+        <div class="header_header-column">
+          <span class="header_icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <div class="header_icon">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main class="chat-screen">
       <ul class="chat_messages">
         <span class="chat_timestamp">Monday, January 13, 2020</span>
         <li class="incoming-message message">
           <img src="images/giwan.jpg" class="g-avatar message_avatar" />
           <div class="message_content">
-            <span class="message_author">오빠</span>
             <div class="message_bubble">
               지금 뭐함?
             </div>
+            <span class="message_author">오빠</span>
           </div>
           <span class="message_timestamp"></span>
         </li>
-        <li class="incoming-message message">
+        <li class="sent-message message">
           <span class="message_timestamp"></span>
           <div class="message_content">
             <div class="message_bubble">
-              집 가는중 왜?
+              집 가는중
+            </div>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/giwan.jpg" class="g-avatar message_avatar" />
+          <div class="message_content">
+            <div class="message_bubble">
+              롤 ㄱㄱ
+            </div>
+            <span class="message_author">오빠</span>
+          </div>
+          <span class="message_timestamp"></span>
+        </li>
+        <li class="sent-message message">
+          <span class="message_timestamp"></span>
+          <div class="message_content">
+            <div class="message_bubble">
+              ㅋ
             </div>
           </div>
         </li>
       </ul>
     </main>
-    <div class="chat_write">
-      <div class="chat_write-column">
-        <i class="far fa-plus_square"></i>
+    <div class="chat_write-container">
+      <input
+        class="chat_write"
+        type="text"
+        class="chat_write-input"
+        placeholder="메세지를 입력하세요"
+      />
+      <div class="chat_icon-left chat_icon">
+        <i class="far fa-plus-square"></i>
       </div>
-      <div class="chat_write-column">
-        <input
-          type="text"
-          class="chat_write-input"
-          placeholder="메세지를 입력하세요"
-        />
-      </div>
-      <div class="chat_write-column">
+
+      <div class="chat_icon-right">
         <span class="chat_write-icon">
           <i class="far fa-smile-wink"></i>
         </span>
@@ -82,6 +103,11 @@
           <i class="fas fa-microphone"></i>
         </span>
       </div>
+    </div>
+    <div class="bigScreen">
+      <span class="bigScreen_text">
+        Please make your screen small
+      </span>
     </div>
   </body>
 </html>
